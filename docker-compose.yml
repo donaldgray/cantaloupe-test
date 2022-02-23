@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  cantaloupe:
+    build: .
+    ports:
+      - "8182:8182"
+    volumes:
+      - $HOME\Docker\cantaloupe:/nas
+      # - $HOME\.aws:/root/.aws:ro
+    
